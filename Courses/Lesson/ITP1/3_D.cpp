@@ -3,9 +3,16 @@ using namespace std;
 
 int main()
 {
-    for (int i = 0; i < 1000; i ++)
+    int a, b, c,count = 0;
+    cin >> a >> b >> c;
+    for (int i = a; i <= b; i++)
     {
-        cout << "Hello World" << endl;
+        if(c % i == 0)
+        {
+            count++;
+        }
     }
+
+    cout << count << endl;
     return 0;
 }
